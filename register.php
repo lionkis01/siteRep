@@ -17,8 +17,7 @@ if(isset($_POST["register"])){
 			$result=$myPDO->query($PDO);
 			if($result)
 			{
-			$message="Account Successfully Created";
-			echo $message;
+			header("Location: login.php");
 			}
 			else
 			{
